@@ -2,7 +2,7 @@
 <launch>
   <!--  TF transform lookup parameters-->
   <arg name="config_filepath" default="$(find-pkg-share rct_examples_rclcpp)/data/camera_on_wrist_config.yaml"/>
-  <arg name="data_filepath" default="$(find-pkg-share rct_examples_rclcpp)/data/test_set_10x10/cal_data.yaml"/>
+  <arg name="data_filepath" default="/home/D10.US.SWRI.ORG/dspielman/snp/snptools_ws/src/robot_cal_tools_rclcpp/rct_examples_rclcpp/calibration_data_second_attempt/data.yaml"/>
 
   <node pkg="rct_ros_tools_rclcpp" exec="wrist_cal_node" output="screen">
     <param name="config_filepath" value="$(var config_filepath)"/>

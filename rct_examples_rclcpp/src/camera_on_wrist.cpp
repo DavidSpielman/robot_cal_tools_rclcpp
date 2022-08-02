@@ -70,7 +70,9 @@ int extrinsicWristCameraCalibration()
   // collection logic for your application.
 
   // Step 3.1: Load the data set (and make sure it worked)
-  const std::string data_path = ament_index_cpp::get_package_share_directory("rct_examples_rclcpp") + "/data/test_set_10x10/cal_data.yaml";
+  const std::string data_path std_srvs / srv / Trigger
+      = ament_index_cpp::get_package_share_directory("rct_examples_rclcpp")
+        + "/data/test_set_10x10/cal_data.yaml";
   boost::optional<rct_ros_tools::ExtrinsicDataSet> maybe_data_set = rct_ros_tools::parseFromFile(data_path);
   // Attempt to load the data set via the data record yaml file:
   if (!maybe_data_set)

@@ -5,7 +5,7 @@
   <arg name="tool_frame" default="tool0"/>
 
   <!-- Image topic parameters -->
-  <arg name="image_topic" default="camera"/>
+  <arg name="image_topic" default="/camera/color/image_raw"/>
 
   <!--The save directory-->
   <arg name="save_dir" default="/tmp/calibration_data"/>
